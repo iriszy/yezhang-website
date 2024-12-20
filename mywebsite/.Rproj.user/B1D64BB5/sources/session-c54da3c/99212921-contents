@@ -1,0 +1,16 @@
+---
+title: "CV"
+output: 
+  html_document:
+    css: css/styles.css
+---
+
+<!--html_preserve-->
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Lora:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+You can download my CV using the link below:
+
+<a href="CV.pdf" download>Download CV (PDF)</a>
+<!--html_preserve-->

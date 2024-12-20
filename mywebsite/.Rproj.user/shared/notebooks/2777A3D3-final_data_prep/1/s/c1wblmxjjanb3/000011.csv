@@ -1,0 +1,5 @@
+"0","d <- readRDS(""/Users/yezhang/Dropbox (MIT)/Dissertation/Data/sample_firm_since_2012_checked.rds"")
+"
+"2","Error in readRDS(""/Users/yezhang/Dropbox (MIT)/Dissertation/Data/sample_firm_since_2012_checked.rds"") : 
+  error reading from connection
+"

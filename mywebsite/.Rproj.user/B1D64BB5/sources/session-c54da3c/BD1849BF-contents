@@ -1,0 +1,83 @@
+---
+title: "Research"
+output: 
+  html_document:
+    css: css/styles.css
+---
+<!--html_preserve-->
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@300;400;700&family=Lora:wght@400;600;700&family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Adds spacing between projects */
+  margin-top: 20px; /* Adds some space at the top of the page */
+}
+
+.project {
+  display: flex;
+  align-items: stretch; /* Aligns items at the top */
+  gap: 20px; /* Adds space between image and text */
+}
+
+.project-icon {
+  width: 250px; /* Adjust the icon size */
+  height: auto;
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+  border-radius: 8px; /* Optional: Makes the image round */
+}
+
+.project-text {
+  max-width: 700px; /* Ensures text doesn't stretch too wide */
+}
+
+.project-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-abstract {
+  margin-bottom: 10px;
+}
+
+.project-link {
+  font-weight: bold;
+  color: #007acc;
+  text-decoration: none;
+}
+.project-link:hover {
+  text-decoration: underline;
+}
+</style>
+
+<div class="container">
+  <!-- First Project -->
+  <div class="project">
+    <img src="project1-icon.jpg" alt="Project 1 Icon" class="project-icon">
+    <div class="project-text">
+      <div class="project-title">Political Control in the Workplace: How Autocrats Use Private Firms to Control Citizens (Dissertation)</div>
+      <div class="project-abstract">
+        Conventional wisdom suggests that private firms are independent entities, and a growing private sector would weaken authoritarian control and facilitate democratization. However, a noteworthy trend has emerged where firms increasingly assist autocrats in sustaining power, such as mobilizing employees to vote for autocrats in electoral autocracies, or firing employee-activists to demobilize mass protests. In this project, I propose a theoretical framework for understanding authoritarian control through private firms. It aims to address two questions: 1) Under what circumstances do autocrats become inclined to use private firms as instruments to control citizens, given the array of other tools at their disposal? 2) How do they implement this strategy? I then test the theories in the context of China, examining state infiltration in private firms via party cells and state equity shares and its potential pacifying effects.
+      </div>
+      <p class="project-link">Draft coming soon</p>
+    </div>
+  </div>
+
+  <!-- Second Project -->
+  <div class="project">
+    <img src="project2-icon.jpg" alt="Project 2 Icon" class="project-icon">
+    <div class="project-text">
+      <div class="project-title">Strong State, Weak Enforcement: Bureaucratic Forbearance of China's Social Insurance Policies</div>
+      <div class="project-abstract">
+        Why would a strong authoritarian state choose not to enforce its own policy? We extend the theory of forbearance to the authoritarian context and highlight different incentives and characteristics of forbearance. In the context of China's modern social insurance system, we argue that local officials have career incentives to allow firms to evade insurance taxes. Specifically, promotion-seeking local officials under severe interjurisdictional competitions tend to forgo firms' social insurance payments in the hope of better economic performance and career prospects. These effects of officials' promotional pressure on social insurance forbearance are most significant among domestic private firms and foreign firms. We conduct the first systematic analysis of firm-level social insurance contributions in an authoritarian context and offer additional evidence from individual-level survey data. Our paper shows that bureaucratic forbearance of China's social insurance policies has a pro-business bias, which undermined the policies originally designed to address inequalities during market reforms.
+      </div>
+      <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4527225" class="project-link" target="_blank">Link to paper</a>
+    </div>
+  </div>
+</div>
+<!--/html_preserve-->

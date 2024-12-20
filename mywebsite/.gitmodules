@@ -1,0 +1,3 @@
+[submodule "mywebsite"]
+  path = mywebsite
+  url = https://github.com/iriszy/my-website.git
