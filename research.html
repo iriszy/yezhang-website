@@ -279,33 +279,30 @@ $(document).ready(function () {
 </head>
 
 <style>
-/* CV-style research list. Distinct class name (NOT .container) to avoid
-   colliding with Bootstrap's navbar .container. */
+/* Typography matched to teaching.html. Distinct wrapper class (NOT .container)
+   to avoid colliding with Bootstrap's navbar .container. */
 .research-list {
   max-width: 800px;
-  margin-top: 20px;
+  margin: 20px auto; /* Same top gap + centering as teaching's .teaching-container */
+  padding: 20px;
 }
 
-.research-section {
-  margin-bottom: 56px; /* Generous spacing between sections */
+/* Section headings: same as teaching.html's <h3> institution headings —
+   inherited Roboto sans-serif, 24px (base style), Bootstrap weight 500, no
+   underline rule, color #333. */
+.research-list h3 {
+  color: #333;
 }
 
-.research-section-title {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 1.5em;
-  font-weight: 700;
-  margin-bottom: 22px;
-  padding-bottom: 6px;
-  border-bottom: 1px solid #ddd;
-}
-
+/* Paper entries: regular-weight body text. Keep clear vertical spacing between
+   entries since titles are no longer bold and there are no bullets. */
 .paper {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   line-height: 1.55;
 }
 
 .paper-title {
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .paper-link {
@@ -316,7 +313,7 @@ $(document).ready(function () {
   text-decoration: underline;
 }
 
-/* Award sub-list under a paper: smaller, lighter, italic, indented */
+/* Award sub-list under a paper: slightly smaller, lighter, italic, indented */
 .paper-awards {
   list-style: none;
   margin: 8px 0 0 24px;
@@ -334,7 +331,7 @@ $(document).ready(function () {
 
   <!-- Section 1: Publications -->
   <section class="research-section">
-    <h2 class="research-section-title">Publications</h2>
+    <h3>Publications</h3>
     <div class="paper">
       <span class="paper-title">“Strong State, Weak Enforcement: Bureaucratic Forbearance of China's Social Insurance Policies”</span> (with Hao Zhang). <i>Political Science Research and Methods</i>. <a href="https://www.cambridge.org/core/journals/political-science-research-and-methods/article/strong-state-weak-enforcement-bureaucratic-forbearance-of-chinas-social-insurance-policies/8BC5D9A7EBB10C56041C3A4E3A0B286D" class="paper-link" target="_blank">Link</a>
     </div>
@@ -342,7 +339,7 @@ $(document).ready(function () {
 
   <!-- Section 2: Working Papers -->
   <section class="research-section">
-    <h2 class="research-section-title">Working Papers</h2>
+    <h3>Working Papers</h3>
     <div class="paper">
       <span class="paper-title">“Political Control in the Workplace: How Autocracies Discipline Workers Without Distorting Firm Behavior”</span> (Job Market Paper). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5560779" class="paper-link" target="_blank">Link</a>
       <ul class="paper-awards">
@@ -361,7 +358,7 @@ $(document).ready(function () {
 
   <!-- Section 3: Work in Progress -->
   <section class="research-section">
-    <h2 class="research-section-title">Work in Progress</h2>
+    <h3>Work in Progress</h3>
     <div class="paper">
       <span class="paper-title">“Co-Producing Political Control: Why Firms Accept Party Cells in China”</span>
     </div>
