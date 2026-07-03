@@ -279,9 +279,11 @@ $(document).ready(function () {
 </head>
 
 <style>
-.container {
+.projects-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap; /* Preserved from css/styles.css .container */
+  align-items: flex-start; /* Preserved from css/styles.css .container */
   gap: 40px; /* Adds spacing between projects */
   margin-top: 20px; /* Adds some space at the top of the page */
 }
@@ -323,7 +325,7 @@ $(document).ready(function () {
 }
 </style>
 
-<div class="container">
+<div class="projects-container">
   <!-- First Project -->
   <div class="project">
     <img src="project1-icon.jpg" alt="Project 1 Icon" class="project-icon">
