@@ -287,22 +287,32 @@ $(document).ready(function () {
   padding: 20px;
 }
 
-/* Section headings: same as teaching.html's <h3> institution headings —
-   inherited Roboto sans-serif, 24px (base style), Bootstrap weight 500, no
-   underline rule, color #333. */
-.research-list h3 {
-  color: #333;
+/* Largest gap in the hierarchy: between one section and the next. */
+.research-section {
+  margin-bottom: 60px;
 }
 
-/* Paper entries: regular-weight body text. Keep clear vertical spacing between
-   entries since titles are no longer bold and there are no bullets. */
+/* Section headings: elegant serif (Lora, already loaded) to contrast with the
+   sans-serif body. Medium/dark color. margin-bottom (title -> first paper) is
+   kept >= the paper-to-paper gap so the title never sits too close. */
+.research-list h3 {
+  font-family: 'Lora', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Paper entries: consistent, comfortable spacing so each reads as distinct. */
 .paper {
   margin-bottom: 22px;
   line-height: 1.55;
 }
 
+/* Only the quoted paper title is bold; everything else stays regular weight. */
 .paper-title {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .paper-link {
@@ -313,14 +323,12 @@ $(document).ready(function () {
   text-decoration: underline;
 }
 
-/* Award sub-list under a paper: slightly smaller, lighter, italic, indented */
+/* Award list under a paper: proper bullets, same size/color as body text,
+   non-italic, non-bold. */
 .paper-awards {
-  list-style: none;
-  margin: 8px 0 0 24px;
+  list-style: disc;
+  margin: 8px 0 0 20px;
   padding: 0;
-  font-size: 0.9em;
-  color: #666;
-  font-style: italic;
 }
 .paper-awards li {
   margin-bottom: 4px;
@@ -331,9 +339,9 @@ $(document).ready(function () {
 
   <!-- Section 1: Publications -->
   <section class="research-section">
-    <h3>Publications</h3>
+    <h3>Peer-reviewed Articles</h3>
     <div class="paper">
-      <span class="paper-title">“Strong State, Weak Enforcement: Bureaucratic Forbearance of China's Social Insurance Policies”</span> (with Hao Zhang). <i>Political Science Research and Methods</i>. <a href="https://www.cambridge.org/core/journals/political-science-research-and-methods/article/strong-state-weak-enforcement-bureaucratic-forbearance-of-chinas-social-insurance-policies/8BC5D9A7EBB10C56041C3A4E3A0B286D" class="paper-link" target="_blank">Link</a>
+      <span class="paper-title">“Strong State, Weak Enforcement: Bureaucratic Forbearance of China's Social Insurance Policies”</span> (with Hao Zhang). <i>Political Science Research and Methods</i>. 2026. <a href="https://www.cambridge.org/core/journals/political-science-research-and-methods/article/strong-state-weak-enforcement-bureaucratic-forbearance-of-chinas-social-insurance-policies/8BC5D9A7EBB10C56041C3A4E3A0B286D" class="paper-link" target="_blank">Link</a>
     </div>
   </section>
 
