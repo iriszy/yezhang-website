@@ -12,5 +12,5 @@ output:
 
 You can download my CV using the link below:
 
-<a href="CV.pdf" download>Download CV (PDF)</a>
+<a href="CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
 <!--html_preserve-->
